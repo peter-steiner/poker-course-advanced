@@ -1,26 +1,30 @@
-/* Highlight Fish Play & Profiles */
-.md-nav__link[href$="08-fish-play/"] {
-    color: #4e3a4e !important; /* Deep orange */
-    font-weight: bold;
+/* === Light mode: keep your existing styles (no change) === */
+.md-nav__link[href$="08-fish-play/"] { color: #e5ade5 !important; font-weight: bold; }
+.md-nav__link[href$="09-preflop-stats/"] { color: #0b640f !important; font-weight: bold; }
+.md-nav__link[href$="10-player-analysis/"] { color: #6e5b9c !important; font-weight: bold; }
+.md-nav__title { color: #c26b08; font-size: 1.05rem; font-weight: 600; }
+
+/* === Dark mode only === */
+[data-md-color-scheme="slate"] .md-nav__link[href$="08-fish-play/"] {
+  color: #b26fcc !important;  /* lighter lavender for dark bg */
+  font-weight: 700;
 }
 
-/* Highlight Postflop Stats */
-.md-nav__link[href$="09-preflop-stats/"] {
-    color: #0b640f !important; /* Green */
-    font-weight: bold;
+[data-md-color-scheme="slate"] .md-nav__link[href$="09-preflop-stats/"] {
+  color: #32b134 !important;  /* light green for contrast */
+  font-weight: 700;
 }
 
-
-/* Highlight Postflop Stats */
-.md-nav__link[href$="10-player-analysis/"] {
-    color: #6e5b9c !important; /* Green */
-    font-weight: bold;
+[data-md-color-scheme="slate"] .md-nav__link[href$="10-player-analysis/"] {
+  color: #16c7c7 !important;  /* soft lilac for dark bg */
+  font-weight: 700;
 }
 
-
-/* Style section titles */
-.md-nav__title {
-    color: #97610f;
-    font-size: 1.05rem;
-    font-weight: 600;
+[data-md-color-scheme="slate"] .md-nav__title {
+  color: #d89839; /* warm amber for headings on dark */
 }
+
+/* Optional: subtle hover in dark mode */
+[data-md-color-scheme="slate"] .md-nav__link[href$="08-fish-play/"]:hover { text-decoration: underline; }
+[data-md-color-scheme="slate"] .md-nav__link[href$="09-preflop-stats/"]:hover { text-decoration: underline; }
+[data-md-color-scheme="slate"] .md-nav__link[href$="10-player-analysis/"]:hover { text-decoration: underline; }

@@ -1,0 +1,26 @@
+/* Highlight Fish Play & Profiles */
+.md-nav__link[href$="08-fish-play/"] {
+    color: #4e3a4e !important; /* Deep orange */
+    font-weight: bold;
+}
+
+/* Highlight Postflop Stats */
+.md-nav__link[href$="09-preflop-stats/"] {
+    color: #0b640f !important; /* Green */
+    font-weight: bold;
+}
+
+
+/* Highlight Postflop Stats */
+.md-nav__link[href$="10-player-analysis/"] {
+    color: #6e5b9c !important; /* Green */
+    font-weight: bold;
+}
+
+
+/* Style section titles */
+.md-nav__title {
+    color: #97610f;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
