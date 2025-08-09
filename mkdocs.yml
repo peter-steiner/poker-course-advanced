@@ -1,0 +1,88 @@
+
+site_name: Poker Course Advanced
+site_url: https://grndr.se/docs/
+theme:
+  name: material
+  icon:
+    repo: material/github
+  nav:
+      Introduction: material/home
+      Fish Play & Profiles: material/fish
+      Postflop Stats (GTO - SVS): material/chart-line
+      Core Strategies: material/brain
+      Advanced Plays: material/chess-pawn
+      Common Mistakes: material/alert
+      Poker Basics: material/book-open-variant
+      Hand Rankings: material/numeric
+      Practice Drills: material/arm-flex
+      Resources: material/bookmark-multiple
+  logo: images/logo.svg
+  favicon: images/favicon.ico
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.indexes     # <- required so section headers use the index page
+    - navigation.expand
+    - navigation.instant
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+extra_css:
+  - css/player-types.css
+  - css/nav-style.css
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - tables
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Introduction: 01-introduction.md
+
+  - Strategy:
+      - strategy/index.md
+      - Fish Play & Profiles: 08-fish-play.md
+      - Postflop Stats (GTO - SVS): 09-preflop-stats.md
+      - Core Strategies: 04-core-strategies.md
+      - Advanced Plays: 05-advanced-plays.md
+      - Common Mistakes: 06-common-mistakes.md
+
+  - Fundamentals:
+      - fundamentals/index.md
+      - Poker Basics: 02-poker-basics.md
+      - Hand Rankings: 03-hand-rankings.md
+      - Practice Drills: 07-practice-drills.md
+
+  - Resources: 
+    - resources/index.md
+    - Resouces & templates: resources.md
+    - Player analysis guide: 10-player-analysis.md
+
+
+
+
+
+extra:
+  social:
+    - icon: material/web
+      link: https://grndr.se
