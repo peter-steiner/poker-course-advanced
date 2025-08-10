@@ -148,6 +148,19 @@ location ^~ /docs/ {
     try_files $uri $uri/ /docs/index.html;
 }
 ```
+## Login backup
+```
+/var/backups/nginx
+```
+### Create a backup folder if it doesn't exist
+sudo mkdir -p /var/backups/nginx
+
+### Copy the file
+sudo cp /etc/nginx/.htpasswd /var/backups/nginx/htpasswd_$(date +%F_%H-%M-%S)
+
+### Check it
+ls -l /var/backups/nginx/
+
 
 ---
 
