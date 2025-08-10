@@ -73,6 +73,16 @@ nav:
       - Hand Rankings: 03-hand-rankings.md
       - Practice Drills: 07-practice-drills.md
 
+  - Players:
+      - players/index.md
+      - Players: 11-players-and-strategy.md
+
+  - Ranges:
+      - ranges/index.md
+      - BB Ranges: ranges/bb-ranges.md
+      - BTN Ranges: ranges/btn-ranges.md
+
+
   - Resources: 
     - resources/index.md
     - Resouces & templates: resources.md
